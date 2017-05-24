@@ -1,0 +1,40 @@
+{
+  "name": "qbrt-pkg",
+  "description": "Generate binary executables of qbrt for your HTML5 Web Apps.",
+  "version": "0.1.5",
+  "main": "launch.js",
+  "bin": {
+    "qbrt-pkg": "pkg.js",
+    "qbrt-launch": "launch.js"
+  },
+  "license": "Apache-2.0",
+  "repository": "cvan/qbrtify",
+  "homepage": "https://github.com/cvan/qbrtify",
+  "engines": {
+    "node": ">=5.10.0"
+  },
+  "scripts": {
+    "start": "npm run launch",
+    "launch": "node launch.js",
+    "cli": "node launch.js",
+    "run": "npm run cli",
+    "open": "npm run cli",
+    "pkg": "node pkg.js",
+    "pkg-example": "node pkg.js 'https://webvr.rocks/'",
+    "pkg-webvrrocks": "node pkg.js 'https://webvr.rocks/'",
+    "pkg-aframe-spheres": "node pkg.js 'https://webvr.rocks/'",
+    "launch-example": "node launch.js 'https://webvr.rocks/'",
+    "launch-webvrrocks": "node launch.js 'https://webvr.rocks/'",
+    "launch-aframe-spheres": "node launch.js 'https://webvr.rocks/'"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cli": "^1.0.1",
+    "fs-extra": "^3.0.1",
+    "init-skeleton": "^1.0.1",
+    "micro-promisify": "^0.1.1",
+    "node-fetch": "^1.7.0",
+    "opn": "^5.0.0",
+    "pkg": "^3.0.4"
+  }
+}
